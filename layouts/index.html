@@ -1,5 +1,3 @@
 {{ define "main" }}
-  {{ range .Site.RegularPages }}
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-  {{ end }}
+  {{- partial "list.html" }}
 {{ end }}
