@@ -1,9 +1,9 @@
 {{ if .IsHome }}
   {{ range .Site.RegularPages }}
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ .PublishDate.Format "2 Jan 2006" }}</h3>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ .PublishDate.Format "2 Jan 2006" }}</h2>
   {{ end }}
 {{ else }}
   {{ range .Pages }}
-    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ .PublishDate.Format "2 Jan 2006" }}</h3>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a> {{ .PublishDate.Format "2 Jan 2006" }}</h2>
   {{ end }}
 {{ end }}
